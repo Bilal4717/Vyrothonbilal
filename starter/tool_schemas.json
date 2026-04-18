@@ -1,0 +1,59 @@
+[
+  {
+    "name": "weather",
+    "description": "Get current weather for a location.",
+    "schema": {
+      "tool": "weather",
+      "args": {
+        "location": "string",
+        "unit": "C|F"
+      }
+    }
+  },
+  {
+    "name": "calendar",
+    "description": "List or create calendar events.",
+    "schema": {
+      "tool": "calendar",
+      "args": {
+        "action": "list|create",
+        "date": "YYYY-MM-DD",
+        "title": "string (required for create, omit for list)"
+      }
+    }
+  },
+  {
+    "name": "convert",
+    "description": "Convert a value between units.",
+    "schema": {
+      "tool": "convert",
+      "args": {
+        "value": "number",
+        "from_unit": "string",
+        "to_unit": "string"
+      }
+    }
+  },
+  {
+    "name": "currency",
+    "description": "Convert an amount between currencies using ISO 4217 codes.",
+    "schema": {
+      "tool": "currency",
+      "args": {
+        "amount": "number",
+        "from": "ISO3",
+        "to": "ISO3"
+      }
+    }
+  },
+  {
+    "name": "sql",
+    "description": "Execute a SQL query against the local database.",
+    "schema": {
+      "tool": "sql",
+      "args": {
+        "query": "string"
+      }
+    }
+  }
+]
